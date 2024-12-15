@@ -1,4 +1,14 @@
-# sayi=int(input("Bir sınır değeri tuşlayınız: "))
+# sayi = int(input("Bir sayı giriniz: "))
+# for i in range(2,sayi+1):
+#     if sayi%i==0:
+#         for j in range(2,i):
+#             if i%j==0:
+#                 break
+#         else:
+#             print(i,"Sayısı",sayi,"Sayısının Asal Çarpanıdır.")
+
+
+# sayi=int(input("Bir sınır tuşlayınız: "))
 # for i in range(2,sayi+1):
 #     for j in range(2,i):
 #         if i%j==0:
@@ -745,8 +755,11 @@
 #     for j in range(2, i + 1):
 #         for k in range(2, j):
 #             if j % k == 0:
-#                 if (i ** j - i) % j == 0:
-#                     if str(j) not in  fermat_listesi:
-#                         fermat_listesi+=str(j)+" "
 #                 break
-# print(fermat_listesi, "Sayıları Carmichael Sayıları Teoremine Uyar...")
+#         else:
+#             if (i ** j - i) % j == 0:
+#                 if str(j) not in  fermat_listesi:
+#                     fermat_listesi+=str(j)+" "   
+# print(fermat_listesi, "Sayısıları Fermat’ın Küçük Teoremine Uyar...")
+
+
