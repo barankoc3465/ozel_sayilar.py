@@ -740,7 +740,6 @@
 
 # baslangıc = int(input("Aralığınız İçin Bir Başlangıç Değeri Giriniz: "))
 # bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
-
 # for i in range(baslangıc, bitis + 1):
 #     fermat_listesi=""
 #     for j in range(2, i + 1):
