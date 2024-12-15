@@ -738,25 +738,6 @@
 #             break
 
 
-baslangıc = int(input("Aralığınız İçin Bir Başlangıç Değeri Giriniz: "))
-bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
-for i in range(baslangıc, bitis + 1):
-    fermat_listesi=""
-    for j in range(2, i + 1):
-        for k in range(2, j):
-            if j % k == 0:
-                if (i ** j - i) % j == 0:
-                    if str(j) not in  fermat_listesi:
-                        fermat_listesi+=str(j)+" "
-                break
-        else:
-            if (i ** j - i) % j == 0:
-                if str(j) not in  fermat_listesi:
-                    fermat_listesi+=str(j)+" "   
-print(fermat_listesi, "Sayısıları Fermat’ın Küçük Teoremine Uyar...")
-
-
-
 # baslangıc = int(input("Aralığınız İçin Bir Başlangıç Değeri Giriniz: "))
 # bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
 
