@@ -763,3 +763,186 @@
 # print(fermat_listesi, "Sayısıları Fermat’ın Küçük Teoremine Uyar...")
 
 
+# terim = int(input("Sınırdaki Terim Sayısını Giriniz: "))
+# a,b,c=0,0,1
+# tribonacci_dizisi=""
+# for i in range(terim):
+#     a,b,c=b,c,a+c+b
+#     tribonacci_dizisi+=str(c)+" "    
+# print(tribonacci_dizisi,"Sayıları Tribonacci Dizisinin",terim,".Terime kadar olan dizisidir.")
+
+
+# sayi=input("3 Basamaklı Bir Tamsayı Değeri Giriniz: ")
+# a,b,c="","",""
+# for i in sayi:
+#     if a=="":
+#         a=int(i)
+#     elif b=="":
+#         b=int(i)
+#     else:
+#         c=int(i)
+# keith_sayıları=""
+# while c!=int(sayi):
+#     a,b,c=b,c,a+c+b
+#     keith_sayıları+=str(c)+" " 
+#     if c>int(sayi):
+#         break
+# print(keith_sayıları,"Sayıları",sayi,"Sayısının Keith Sayısına göre dizisidir.")   
+# if c==int(sayi):
+#     print(sayi,"Sayısının Keith Sayısıdır.")
+# else:
+#     print(sayi,"Sayısının Keith Sayısı değildir.")
+            
+
+# baslangıc = int(input("Aralığınız İçin Bir Başlangıç Değeri Giriniz: "))
+# bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
+# for i in range(baslangıc, bitis + 1):
+#     sayinin_karesi=i**2
+#     sayinin_karesinin_tersi=""
+#     for j in str(sayinin_karesi):
+#         sayinin_karesinin_tersi=j+sayinin_karesinin_tersi
+#     if sayinin_karesinin_tersi==str(sayinin_karesi):
+#         print(sayinin_karesi,"Sayısı,",i,"Sayısının Karesidir.")
+#         print(i,"Sayısı Palindromik Kare Sayısıdır.")
+
+
+# baslangıc = int(input("Aralığınız İçin Bir Başlangıç Değeri Giriniz: "))
+# bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
+# semiprime_sayilari=""
+# for i in range(baslangıc,bitis+1):
+#     for a in range(2,i):
+#         if i%a==0:
+#             break
+#     else:
+#         for j in range(2,i+1):
+#             for b in range(2,j):
+#                 if j%b==0:
+#                     break
+#             else:
+#                 asal_carpim=i*j
+#                 if str(asal_carpim) not in semiprime_sayilari:
+#                     semiprime_sayilari+=str(asal_carpim)+" "
+#                     print(i,"x",j,"=",asal_carpim)
+# print(semiprime_sayilari,"Sayıları Semiprime Sayılarıdır.")
+
+
+# kontrol_sayisi=int(input("Kontrol edeceğiniz tam sayıyı giriniz: "))
+# asal_bolen_cifti=""
+# asal_carpan=1
+# adet=0
+# for i in range(2,kontrol_sayisi+1):
+#     if kontrol_sayisi%i==0:
+#         for j in range(2,i):
+#             if i%j==0:
+#                 break
+#         else:   
+#             asal_bolen_cifti+=str(i)+" "
+#             asal_carpan*=i
+#             adet+=1
+#         if adet==2:
+#             break
+# if asal_carpan==kontrol_sayisi:
+#     print(kontrol_sayisi,"Sayısı, Semiprime Sayısıdır. ")
+# else:
+#     print(kontrol_sayisi,"Sayısı, Semiprime Sayısı değildir... ")
+
+
+
+# baslangıc = int(input("Aralığınız İçin Bir Başlangıç Değeri Giriniz: "))
+# bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
+# for i in range(baslangıc, bitis + 1):
+#     basamak_kupu_toplami=0
+#     for a in str(i):
+#         basamak_kupu_toplami+=(int(a)**3)
+#     if basamak_kupu_toplami==i:
+#         print(i,"Sayısı, Küpsel Sayısıdır.")
+
+
+
+# baslangıc = int(input("Aralığınız İçin Bir Başlangıç Değeri Giriniz: "))
+# bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
+# for i in range(baslangıc, bitis + 1):
+#     basamak_faktoriyeli_toplami=0
+#     for a in str(i):
+#         basamak_faktoriyeli_=1
+#         for j in range(1,int(a)+1):
+#             basamak_faktoriyeli_*=j
+#         basamak_faktoriyeli_toplami+=basamak_faktoriyeli_
+#     if basamak_faktoriyeli_toplami==i:
+#         print(i,"Sayısı Faktorion Sayısıdır.")
+
+
+# sayi=1729
+# adet=0
+# for i in range(1,sayi+1):
+#     for j in range(1,i+1):
+#         if sayi==i**3+j**3:
+#             print(i**3,"+",j**3,"=",sayi)
+#             adet+=1
+# else:
+#     if adet==2:
+#         print(sayi,"Sayısı Ramanujan Hardy Sayılarındandır.")
+#     else:
+#         print(sayi,"Sayısı Ramanujan Hardy Sayılarından değildir...")
+
+
+# sayi=1729
+# adet=0
+# for i in range(1,sayi+1):
+#     for j in range(1,i+1):
+#         if sayi==i**3+j**3:
+#             print(i**3,"+",j**3,"=",sayi)
+#             adet+=1
+# else:
+#     if adet==2:
+#         print(sayi,"Sayısı Ramanujan Hardy Sayılarındandır.")
+#     else:
+#         print(sayi,"Sayısı Ramanujan Hardy Sayılarından değildir...")
+
+
+# bitis = int(input("Aralığınız İçin Bir Bitiş Değeri Giriniz: "))
+# for i in range(1, bitis+1):
+#     basamak_adedi=0
+#     basamak_ussu_basamak_adedi_toplami=0
+#     for k in str(i):
+#         basamak_adedi+=1
+#     for l in str(i):
+#         basamak_ussu_basamak_adedi_toplami+=int(l)**basamak_adedi
+#     if basamak_ussu_basamak_adedi_toplami==i:
+#         print(i,"Sayısı Armstrong Dizisinin Elemanıdır.")
+
+
+# n=int(input("n: "))
+# cullen_sayi_listesi=""
+# for i in range(1,n+1):
+#     z=i*2**i+1
+#     cullen_sayi_listesi+=str(z)+","
+# print(cullen_sayi_listesi,"Sayıları Cullen Dizisinin Elemanlarıdır.")
+
+
+# bitis=int(input("Bir maksimum değer giriniz: "))
+# for i in range(1,bitis+1):
+#     for j in range(1,i+1):
+#         a=j
+#         for k in range(1,j+1):
+#             b=k
+#             if a**2+b**2==i**2:
+#                 print("a: ",b,"b: ",a,"c: ",i,"Sayıları Pisagor Üçlüleridir...")
+
+
+# bitis=int(input("Bir maksimum değer giriniz: "))
+# for i in range(1,bitis+1):
+#     for k in range(1,bitis+1):
+#         j=i
+#         ardısık_karelerin_toplami=0   
+#         ardısık_kareler_listesi=""
+#         ardısık_sayi_adedi=0
+#         while ardısık_karelerin_toplami<k:
+#             ardısık_karelerin_toplami+=j**2
+#             ardısık_kareler_listesi+=str(j)+" "
+#             ardısık_sayi_adedi+=1
+#             j+=1
+#             if ardısık_karelerin_toplami == k and ardısık_sayi_adedi>2:
+#                 print(ardısık_kareler_listesi,"Ardışık Sayılarının Karelerin Toplamı",ardısık_karelerin_toplami,"Sayısına Eşittir.")
+#                 break
+        
