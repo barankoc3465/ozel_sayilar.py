@@ -946,3 +946,60 @@
 #                 print(ardısık_kareler_listesi,"Ardışık Sayılarının Karelerin Toplamı",ardısık_karelerin_toplami,"Sayısına Eşittir.")
 #                 break
         
+
+
+# bitis=int(input("Bir maksimum değer giriniz: "))
+# for i in range(1,bitis):
+#     rakamlarin_karesi_toplami=0
+#     for j in str(i):
+#         rakamlarin_karesi_toplami+=int(j)**2
+#         adet=0
+#         while rakamlarin_karesi_toplami!=1:
+#             rakamlarin_karesi_toplami=0
+#             for k in str(rakamlarin_karesi_toplami):
+#                 rakamlarin_karesi_toplami+=int(j)**2
+#                 adet+=1
+#             if adet==15:
+#                 break
+#         else:
+#             print(i, "Sayısı Happy Numbers (Mutlu Sayılar) Familyasındandır.")
+    
+
+# bitis=int(input("Bir maksimum değer giriniz: "))
+# for i in range(1,bitis):
+#     a=i
+#     for j in range(1,bitis):
+#         b=j
+#         for k in range(1,bitis):
+#             c=k
+#             harmonik_ortalama_sayilari=3/((b*c+a*c+b*a)/(a*b*c))
+#             if harmonik_ortalama_sayilari==int(harmonik_ortalama_sayilari):
+#                 print(a,b,c,sep=", ")
+
+
+# baslangıc=int(input("Bir Başlangıç değeri giriniz: "))
+# bitis=int(input("Bir Bitiş değeri giriniz: "))
+# for i in range(baslangıc,bitis+1):
+#     asal_carpan_listesi=""
+#     asal_carpanlar=1
+#     for j in range(2,i):
+#         if i%j==0:
+#             for k in range(2,j):
+#                 if j%k==0:
+#                     break
+#             else:
+#                 asal_carpan_listesi+=str(j)+" "
+#                 asal_carpanlar*=j
+#     else:
+#         while asal_carpanlar!=i:
+#             oran=i//asal_carpanlar
+#             for m in range(2,oran+1):
+#                 if oran%m==0:
+#                     for k in range(2,m):
+#                         if m%k==0:
+#                             break
+#                     else:
+#                         asal_carpan_listesi+=str(m)+" "
+#                         asal_carpanlar*=m
+#         else:
+#             print(asal_carpan_listesi,"Sayıları",i,"Sayısının Asal Çarpanlarıdır.")
