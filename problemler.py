@@ -1968,3 +1968,1605 @@
 #     print(altin_cift_sayilar_listesi)
 
 
+
+
+# i=0
+# while i<1000:
+#     i+=1
+#     a=i
+#     ciftlik_adimi_sayisi=0
+#     while a%2!=0:
+#         ters_sayi=""
+#         ciftlik_adimi_sayisi+=1 
+#         for j in str(a):
+#             ters_sayi=j+ters_sayi
+#         else:
+#             a+=int(ters_sayi)
+#     if ciftlik_adimi_sayisi>0:
+#         print(i,ciftlik_adimi_sayisi)
+
+
+
+# i=0
+# bitis=int(input("bir bitiş değeri giriniz: "))
+# ters_toplam_kare_listesi=[]
+# while i<bitis:
+#     i+=1
+#     ters_i=""
+#     for j in str(i):
+#         ters_i=j+ters_i
+#     else:
+#         if (i+int(ters_i))**0.5==int((i+int(ters_i))**0.5):
+#             ters_toplam_kare_listesi.append(i)
+# print(ters_toplam_kare_listesi)
+
+
+
+
+# sayi1=int(input("1.sayınızı giriniz: "))
+# sayi2=int(input("2.sayınızı giriniz: "))
+# a,b=0,1
+# fibonacci_cifti_listesi=[]
+# while b<sayi1+sayi2:
+#     a,b=b,b+a
+#     fibonacci_cifti=a,b
+#     fibonacci_cifti_listesi.append(fibonacci_cifti)
+# kontrol_listesi=sayi1,sayi2
+# if kontrol_listesi in fibonacci_cifti_listesi:
+#     print(kontrol_listesi,"sayı çifti 2 ardışık fibonacci sayısıdır.")
+# else:
+#     print("değildir.")
+
+
+
+
+# bitis=int(input("bir sayı giriniz: "))
+# bolunebilen_ters_sayi_listesi=[]
+# for i in range(1,bitis):
+#     ters_sayi=""
+#     for j in str(i):
+#         ters_sayi=j+ters_sayi
+#     else:
+#         if i%int(ters_sayi)==0:
+#             bolunebilen_ters_sayi_listesi.append(i)
+# else:
+#     print(bolunebilen_ters_sayi_listesi)
+    
+
+
+# bes_ogrencinin_toplam_notu=0
+# for i in range(1,6):
+#     toplam_not=0
+#     for j in range(1,4):
+#         org_not=int(input(str(i)+". Öğrencinin "+str(j)+". Notu: "))
+#         toplam_not+=org_not
+#     ortalama_notu=toplam_not/3
+#     print(i,".ögrencinin ortalaması :",ortalama_notu)
+#     bes_ogrencinin_toplam_notu+=ortalama_notu
+# bes_ogrencinin_ortalaması=bes_ogrencinin_toplam_notu/5
+# print("5 öğrencinin ortalaması: ",bes_ogrencinin_ortalaması)
+
+
+
+
+# lychrel_sayilari_listesi = []
+# for i in range(1, 10000):
+#     a = i
+#     tekrar_sayisi = 0
+#     while tekrar_sayisi < 50:
+#         ters_sayi = ""
+#         for j in str(i):
+#             ters_sayi = j + ters_sayi
+#         ters_toplam_sayisi = ""
+#         toplam = i + int(ters_sayi)
+#         for k in str(toplam):
+#             ters_toplam_sayisi = k + ters_toplam_sayisi
+#         ters_toplam_sayisinin_tersi = ""
+#         for l in str(ters_toplam_sayisi):
+#             ters_toplam_sayisinin_tersi = l + ters_toplam_sayisinin_tersi
+#         if int(ters_toplam_sayisinin_tersi) == int(ters_toplam_sayisi):
+#             break
+#         else:
+#             i = toplam
+#             tekrar_sayisi += 1
+#             if tekrar_sayisi == 50:
+#                 lychrel_sayilari_listesi.append(a)
+#                 break
+# print(lychrel_sayilari_listesi)
+# print("""55.Soru'nun cevabı:
+# """, len(lychrel_sayilari_listesi), sep="")
+
+
+
+
+# bitis=int(input("bir bitiş değeri giriniz:"))
+# altin_dikdortgen_sayilari=[]
+# for a in range(1,bitis+1):
+#     if a**0.5!=int(a**0.5):
+#         b=a*1.618
+#         dikdortgen_kenarlari=a,b
+#         altin_dikdortgen_sayilari.append(dikdortgen_kenarlari)
+# else:
+#     print(altin_dikdortgen_sayilari)
+
+
+
+
+# bitis=int(input("bir bitiş değeri giriniz: "))
+# kendi_kendine_bolunen_sayilar_listesi=[]
+# for i in range(1,bitis):
+#     for j in str(i):
+#         if j!="0":
+#             if i%int(j)==0:
+#                 pass
+#             else:
+#                 break
+#         else:
+#             break
+#     else:
+#         kendi_kendine_bolunen_sayilar_listesi.append(i)
+# else:
+#     print(kendi_kendine_bolunen_sayilar_listesi)
+
+
+
+# bitis=int(input("bir bitiş değeri giriniz: "))
+# cift_rakam_sayilari=[]
+# for i in range(1,bitis):
+#     for j in str(i):
+#         if int(j)%2!=0:
+#             break
+#     else:
+#         cift_rakam_sayilari.append(i)
+# else:
+#     print(cift_rakam_sayilari)
+        
+
+
+# bitis=int(input(" bir tam sayı değeri tuşlayınız: "))
+# kok_carpan_esit_sayi_listesi=[]
+# for i in range(1,bitis):
+#     if i**0.5==int(i**0.5):
+#         kok_carpanlari_toplami=0
+#         for j in range(1,int(i**0.5)+1):
+#             if int(i**0.5)%j==0:
+#                 kok_carpanlari_toplami+=j
+#         else:
+#             if kok_carpanlari_toplami==i:
+#                 kok_carpan_esit_sayi_listesi.append(i)
+# else:
+#     print(kok_carpan_esit_sayi_listesi)
+
+
+
+
+# bitis=int(input("bir bitiş değeri giriniz: "))
+# mukemmel_cift_listesi=[]
+# for i in range(1,bitis):
+#     print(i)
+#     for j in range(1,i):
+#         if (i+j)**0.5==int((i+j)**0.5) and i-j!=1:
+#             for k in range(2,i-j):
+#                 if (i-j)%k==0:
+#                     break
+#             else:
+#                 mukemmel_cift=j,i
+#                 mukemmel_cift_listesi.append(mukemmel_cift)
+# else: 
+#     print(mukemmel_cift_listesi)
+
+
+
+
+# farkli_rakam_sayilari=[]
+# for i in range(1,10000):
+#     farkli_rakam_kontrol_listesi=[]
+#     farkli_rakam_kontrol_kumesi=set()
+#     for j in str(i):
+#         farkli_rakam_kontrol_listesi.append(j)
+#     else:
+#         for j in farkli_rakam_kontrol_listesi:
+#             farkli_rakam_kontrol_kumesi.add(j)
+#         else:
+#             if len(farkli_rakam_kontrol_kumesi)==len(farkli_rakam_kontrol_listesi):
+#                 farkli_rakam_sayilari.append(i)
+# else:
+#     print(farkli_rakam_sayilari)
+#     print(len(farkli_rakam_sayilari))
+
+
+
+
+# ters_faktoriyel_sayilari_listesi=[]
+# faktoriyel=1
+# for i in range(1,5):
+#     faktoriyel*=i
+#     ters_faktoriyel=""
+#     adet=0
+#     for j in str(faktoriyel):
+#         adet+=1
+#         if adet==len(str(faktoriyel)) and int(j)==0:
+#             break
+#         ters_faktoriyel=j+ters_faktoriyel
+#     else:
+#         ters_faktoriyel_sayilari_listesi.append(int(ters_faktoriyel))
+# else:
+#     print(ters_faktoriyel_sayilari_listesi)        
+
+
+
+
+
+# rakamlari_karesi_toplami_kendise_esit_listesi=[]
+# for i in range(1,1000):
+#     rakamalar_karesi_toplami=0
+#     for j in str(i):
+#         rakamalar_karesi_toplami+=int(j)**3
+#     else:
+#         if rakamalar_karesi_toplami==i:
+#             rakamlari_karesi_toplami_kendise_esit_listesi.append(i)
+# else:
+#     print(rakamlari_karesi_toplami_kendise_esit_listesi)
+
+
+
+
+# a=1
+# b=1
+# dizi_uzunlugu=0
+# fibonacci_listesi=[]
+# ters_fibonacci_listesi=[]
+# ters_duz_fibonacci_listesi=[]
+# while dizi_uzunlugu<1000:
+#     ters_fibonacci=""
+#     dizi_uzunlugu+=1
+#     c=a
+#     a=b
+#     b=b+c
+#     for i in str(a):
+#         ters_fibonacci=i+ters_fibonacci
+#     else:
+#         ters_fibonacci_listesi.append(int(ters_fibonacci))
+#         fibonacci_listesi.append(a)
+# for i in ters_fibonacci_listesi:
+#     if i in fibonacci_listesi:
+#         print(i)
+#         ters_duz_fibonacci_listesi.append(i)
+# else:
+#     print(ters_duz_fibonacci_listesi)
+
+
+
+
+# rakam_ciftligi_listesi=[]
+# sayi=0
+# while sayi<10000:
+#     sayi+=1
+#     tek_rakam_toplami=0
+#     cift_rakam_toplami=0
+#     for i in str(sayi):
+#         if int(i)%2==0:
+#             cift_rakam_toplami+=int(i)
+#         else:
+#             tek_rakam_toplami+=int(i)
+#     else:
+#         if cift_rakam_toplami==tek_rakam_toplami:
+#             rakam_ciftligi_listesi.append(sayi)
+# print(rakam_ciftligi_listesi)
+# rakam_ciftligi_listesinin_toplami=0
+# for i in rakam_ciftligi_listesi:
+#     rakam_ciftligi_listesinin_toplami+=i
+# else:
+#     print(rakam_ciftligi_listesinin_toplami)
+
+
+
+
+# kara_kup_esit_listesi=[]
+# for i in range(1,10000):
+#     if (i**3)**(0.5)==int((i**3)**(0.5)):
+#         kara_kup_esit_listesi.append(i)
+# else:
+#     kara_kup_esit_listesinin_toplami=0
+#     for i in kara_kup_esit_listesi:
+#         kara_kup_esit_listesinin_toplami+=i
+#     else:
+#         print(kara_kup_esit_listesinin_toplami)
+
+
+
+
+# a=1
+# b=1
+# fibonacci_listesi=[]
+# fibonacci_asali_listesi=[]
+# fibonacci_asali_listesinin_toplami=0
+# terim_sayisi=0
+# while terim_sayisi<30:
+#     terim_sayisi+=1
+#     c=a
+#     a=b
+#     b=c+b
+#     fibonacci_listesi.append(a)
+# for i in fibonacci_listesi:
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         fibonacci_asali_listesi.append(i)
+# else:
+#     for k in fibonacci_asali_listesi:
+#         fibonacci_asali_listesinin_toplami+=k
+#     else:
+#         print("Asal Fibonacci Sayıları: ",fibonacci_asali_listesi)
+#         print("Asal Fibonacci Sayılarının Toplamı: ",fibonacci_asali_listesinin_toplami)
+
+
+
+
+# dijital_mukemmel_Sayilar=[]
+# for i in range(1,10000):
+#     rakamlar_carpimi=1
+#     for j in str(i):
+#         rakamlar_carpimi*=int(j)
+#     else:
+#         carpimler_toplami=0
+#         for k in range(1,rakamlar_carpimi):
+#             if rakamlar_carpimi%k==0:
+#                 carpimler_toplami+=k
+#         else:
+#             if rakamlar_carpimi!=0 and carpimler_toplami==rakamlar_carpimi:
+#                 dijital_mukemmel_Sayilar.append(i)
+# else:
+#     dijital_mukemmel_toplamlari=0
+#     for i in dijital_mukemmel_Sayilar:
+#         dijital_mukemmel_toplamlari+=i
+#     else:
+#         print(dijital_mukemmel_Sayilar)
+#         print(dijital_mukemmel_toplamlari)
+
+
+
+
+# for i in range(2,100):
+#     asal_carpanlar=[]
+#     a=i
+#     asal_sayi_kontrolu=0
+#     while i!=1:
+#         for j in range(2,i+1):
+#             if i%j==0:
+#                 for k in range(2,j):
+#                     if j%k==0:
+#                         break
+#                 else:
+#                     asal_sayi_kontrolu+=1
+#                     i//=j
+#                     asal_carpanlar.append(j)
+#     else:
+#         if asal_sayi_kontrolu!=1: 
+#             asal_carpanlar.sort()
+#             print(a,asal_carpanlar)
+
+
+
+
+# yinenlenen_kare_sayilari=[]
+# sayi=1
+# while sayi<1000:
+#     sayi+=1
+#     a=sayi
+#     dongu_sayisi=0
+#     while True:
+#         if a**0.5==int(a**0.5):
+#             a=int(a**0.5)
+#             dongu_sayisi+=1
+#             if dongu_sayisi==2:
+#                 yinenlenen_kare_sayilari.append(sayi)
+#                 break
+#         else:
+#             break
+# print(yinenlenen_kare_sayilari)
+# for i in range(1,21):
+#     print(i**4)
+
+
+
+
+# cift_ve_rakamalari_asallar=[]
+# for i in range(2,100000):
+#     if i%2==0:
+#         rakam_adedi=0
+#         for j in str(i):
+#             if int(j)>1:
+#                 for k in range(2,int(j)):
+#                     if int(j)%k==0:
+#                         break
+#                 else:
+#                     rakam_adedi+=1
+#         else:
+#             if rakam_adedi==len(str(i)):
+#                 cift_ve_rakamalari_asallar.append(i)
+# else:
+#     print(cift_ve_rakamalari_asallar)
+
+
+
+
+# i=2131239566
+# liste=[*str(i)]
+# print(liste)
+
+
+
+# otomorfik_sayilar=[]
+# for i in range(1,1000000):
+#     son_rakamlar=""
+#     sayinin_karesi=i**2
+#     rakamlarin_listesi=[*str(sayinin_karesi)]
+#     for j in range(1,len(str(i))+1):
+#         son_rakamlar=str(rakamlarin_listesi[-j])+son_rakamlar
+#     else:
+#         if int(son_rakamlar)==i:
+#             otomorfik_sayilar.append(i)
+# else:
+#     print(otomorfik_sayilar)
+    
+
+
+# sayi=1
+# rakamlar_karesi_toplami=0
+# mutlu_sayilar=[]
+# while sayi<1000:  
+#     sayi+=1
+#     a=str(sayi)
+#     adet=0
+#     while adet<10:
+#         rakamlar_karesi_toplami=0
+#         for j in a:
+#             rakamlar_karesi_toplami+=int(j)**2
+#         else:
+#             if rakamlar_karesi_toplami==1:
+#                 mutlu_sayilar.append(sayi)
+#                 break
+#             else:
+#                 adet+=1
+#                 a=str(rakamlar_karesi_toplami)
+# print(mutlu_sayilar)
+
+
+
+
+# smith_sayilari=[]
+# for i in range(2,1000):
+#     a=i
+#     rakamlar_toplami=0
+#     asal_carpanlar_toplami=0
+#     asal_sayi_kontrolu=0
+#     asal_carpan=[]
+#     while a!=1:
+#         for j in range(2,a+1):
+#             if a%j==0:
+#                 for k in range(2,int(j**0.5)+1):
+#                     if j%k==0:
+#                         break
+#                 else:
+#                     asal_sayi_kontrolu+=1
+#                     a//=j
+#                     asal_carpan.append(j)
+#                     for k in str(j):
+#                         asal_carpanlar_toplami+=int(k)
+#     if asal_sayi_kontrolu!=1:
+#         for j in str(i):
+#             rakamlar_toplami+=int(j)
+#         else:
+#             if rakamlar_toplami==asal_carpanlar_toplami:
+#                 print(i,asal_carpan)
+#                 smith_sayilari.append(i)
+# else:
+#     print(smith_sayilari)
+
+
+
+
+# smith_sayilari=[]
+# for i in range(2,1000):
+#     a=i
+#     rakamlar_toplami=0
+#     asal_carpanlar_toplami=0
+#     asal_carpanlar=[]
+#     asal_mi=1
+#     for b in range(2,int(a**0.5)+1):
+#         if a%b==0:
+#             asal_mi=0
+#             break
+#     if asal_mi==1:
+#         continue 
+
+#     j=2
+#     while a!=1:
+#         if a%j==0:
+#             a//=j
+#             asal_carpanlar.append(j)
+#             for k in str(j):
+#                 asal_carpanlar_toplami+=int(k)
+#         else:
+#             j+=1 
+#     for m in str(i):
+#         rakamlar_toplami+=int(m)
+#     else:
+#         if rakamlar_toplami==asal_carpanlar_toplami:
+#             print(i,asal_carpanlar)
+#             smith_sayilari.append(i)
+# else:
+#     print(smith_sayilari)
+
+
+
+
+# smith_sayilari=[]
+# for i in range(1000):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         continue
+#     asal_carpanlar=[]
+#     a=i
+#     asal_carpanlar_toplami=0
+#     rakamlar_toplami=0
+#     while a!=1:
+#         for j in range(2,a+1):
+#             if a%j==0:
+#                 for k in range(2,int(j**0.5)+1):
+#                     if j%k==0:
+#                         break
+#                 else:
+#                     asal_carpanlar.append(j)
+#                     a//=j
+#                     for l in str(j):
+#                         asal_carpanlar_toplami+=int(l)
+#     for k in str(i):
+#         rakamlar_toplami+=int(k)
+#     else:
+#         if rakamlar_toplami==asal_carpanlar_toplami:
+#             smith_sayilari.append(i)
+# else:
+#     print(smith_sayilari)
+
+
+
+
+# arkadas_sayi_cifti=[]
+# for i in range(1,10000):
+#     ikinci_sayi=0
+#     birinci_sayi=0
+#     for j in range(1,i):
+#         if i%j==0:
+#             ikinci_sayi+=j
+#     else:
+#         for k in range(1,ikinci_sayi):
+#             if ikinci_sayi%k==0:
+#                 birinci_sayi+=k
+#         else:
+#             if birinci_sayi==i and birinci_sayi>ikinci_sayi:
+#                 arkadas_sayi=ikinci_sayi,birinci_sayi
+#                 arkadas_sayi_cifti.append(arkadas_sayi)
+# else:
+#     print(arkadas_sayi_cifti)
+
+
+
+
+# sabit_terslik_toplami=[]
+# sabitlik_adedi=0
+# for i in range(1,10000):
+#     ters_i=""
+#     for j in str(i):
+#         ters_i=j+ters_i
+#     else:
+#         if i+int(ters_i)==2321:
+#             a=i,int(ters_i)
+#             sabitlik_adedi+=1
+#             sabit_terslik_toplami.append(a)
+# else:
+#     print(sabitlik_adedi)
+
+
+
+
+# kare_kup_ortak_sayilari=[]
+# for i in range(1,100):
+#     if int((i**3)**(1/2))==(i**3)**(1/2):
+#         kare_kup_ortak_sayilari.append(i)
+# else:
+#     print(kare_kup_ortak_sayilari)
+
+
+
+
+# a=[]
+# for i in range(1,20):
+#     a.append(i**2)
+# else:
+#     print(a)
+
+
+
+# rakam_carpan_tekrarlari=[]
+# for i in range(1,100):
+#     rakam_carpan=1
+#     for j in str(i):
+#         rakam_carpan*=int(j)
+#     else:
+#         if rakam_carpan!=0 and (rakam_carpan%i==0 or i%rakam_carpan==0):
+#             rakam_carpan_tekrarlari.append(i)
+# else:
+#     print(rakam_carpan_tekrarlari)
+
+
+
+
+# ters_cift_asal_sayilar=[]
+# ters_cift_adedi=0
+# for i in range(1,1000000):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break   
+#     else:
+#         ters_i=""
+#         for j in str(i):
+#             ters_i=j+ters_i
+#         else:
+#             if i<int(ters_i):
+#                 for k in range(2,int(int(ters_i)**0.5)+1):
+#                     if int(ters_i)%k==0:
+#                         break
+#                 else:
+#                     ters_cift_asal_sayilar.append(i)
+#                     ters_cift_adedi+=1
+# else:
+#     print(ters_cift_asal_sayilar)
+#     print("""Ters Çift Adedi: 
+# """,ters_cift_adedi,sep="")
+
+
+
+
+# ussu_farki_listesi=[]
+# for i in range(1,2000):
+#     for j in range(1,4):
+#         if i**(j+1)-i**j==3840:
+#             ussu_farki_listesi.append(i)
+# else:
+#     print(ussu_farki_listesi)
+
+
+
+
+# ters_rakam_bolunen_sayilar=[]
+# for i in range(1,1000):
+#     ters_i=""
+#     for j in str(i):
+#         ters_i=j+ters_i
+#     else:
+#         if int(ters_i)%i==0:
+#             ters_rakam_bolunen_sayilar.append(i)
+# else:
+#     print(ters_rakam_bolunen_sayilar)
+
+
+
+
+# sayi_listesi=[]
+# sayi_adedi=0
+# for i in range(1000,10000):
+#     rakamlar_carpimi=1
+#     for j in str(i):
+#         rakamlar_carpimi*=int(j)
+#     else:
+#         if rakamlar_carpimi%7==0:
+#             sayi_listesi.append(i)
+#             sayi_adedi+=1
+# else:
+#     print(sayi_listesi)
+#     print(sayi_adedi)
+
+
+
+
+# sayi_lisetesi=[]
+# sayi_adedi=0
+# for i in range(1,1507):
+#     if 1507%i==7 and i%2==1:
+#         sayi_lisetesi.append(i)
+#         sayi_adedi+=1
+# else:
+#     print(sayi_lisetesi)
+#     print(sayi_adedi)
+
+
+
+
+# for i in range(100000,0,-1):
+#     rakam_kontrol=set()
+#     if i%11==0:
+#         for k in str(i):
+#             rakam_kontrol.add(k)
+#         else:
+#             if len(rakam_kontrol)==len(str(i)):
+#                 break
+# print(i%9)
+
+
+
+
+# a="1"
+# for i in range(2009):
+#     a+="0"
+# else:
+#     a+="1"
+#     print(int(a)%44)
+
+
+
+
+# simetrik_toplamlar=[]
+# for i in range(1,1000):
+#     ters_i=""
+#     for j in str(i):
+#         ters_i=j+ters_i
+#     else:
+#         if (i+int(ters_i))**0.5==int((i+int(ters_i))**0.5):
+#             simetrik_toplamlar.append(i)
+# else:
+#     print(simetrik_toplamlar)
+
+
+
+
+# cift_fark_asallari_listesi=[]
+# asal_sayi_listesi=[]
+# for i in range(2,1000):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         asal_sayi_listesi.append(i)
+# else:
+#     for i in asal_sayi_listesi:
+#         for j in asal_sayi_listesi:
+#             if (i-j)%2==0:
+#                 cift_asallar=i,j
+#                 cift_fark_asallari_listesi.append(cift_asallar)
+#     else:
+#         cift_fark_asallari_listesi.sort()
+#         print(len(cift_fark_asallari_listesi))
+
+
+
+# rakam_donusum_sayilari=[]
+# for i in range(1,1000):
+#     rakamlar_toplami=0
+#     rakamlar_carpimi=0
+#     for j in range(1,i):
+#         if i%j==0:
+#             rakamlar_carpimi+=j
+#     else:
+#         for k in str(i):
+#             rakamlar_toplami+=int(k)
+#         else:
+#             if rakamlar_carpimi==rakamlar_toplami:
+#                 rakam_donusum_sayilari.append(i)
+# else:
+#     print(rakam_donusum_sayilari)
+#     print(len(rakam_donusum_sayilari))
+
+
+
+# a=1
+# b=1
+# alternatif_cift_fibonacci_sayilari=[]
+# for i in range(10):
+#     c=a
+#     a=b
+#     b=c+b
+#     if (a*b)%2==0:
+#         d=a,b
+#         alternatif_cift_fibonacci_sayilari.append(d)
+# else:
+#     print(alternatif_cift_fibonacci_sayilari)
+
+
+
+
+# a=1
+# b=1
+# asal_duzey_fibonacci_sayilari=[]
+# fibonacci_adedi=0
+# while fibonacci_adedi<20:
+#     rakamlar_toplami=0
+#     fibonacci_adedi+=1
+#     c=a
+#     a=b
+#     b=b+c
+#     for rakam in str(b):
+#         rakamlar_toplami+=int(rakam)
+#     for asal in range(2,rakamlar_toplami):
+#         if rakamlar_toplami%asal==0:
+#             break
+#     else:
+#         asal_duzey_fibonacci_sayilari.append(b)
+# print(asal_duzey_fibonacci_sayilari)
+         
+
+
+# asal_sayi_listesi=[]
+# ters_asal_farklar_listesi=[]
+# for i in range(2,50):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         asal_sayi_listesi.append(i)
+# else:
+#     for k in asal_sayi_listesi:
+#         for j in asal_sayi_listesi:
+#             if k>j+10:
+#                 fark=str(k-j)
+#                 ters_fark=""
+#                 for l in fark:
+#                     ters_fark=l+ters_fark
+#                 else:
+#                     if ters_fark==fark:
+#                         ters_asal_farklar=k,j
+#                         ters_asal_farklar_listesi.append(ters_asal_farklar)
+#     else:
+#         print(ters_asal_farklar_listesi)
+
+
+
+
+# kup_farki_asal_sayilar_ciftleri_listesi=[]
+# for i in range(2,100):
+#     kup_farki=i**3-(i-1)**3
+#     for j in range(2,kup_farki):
+#         if kup_farki%j==0:
+#             break
+#     else:
+#         kup_farki_cifti=i**3-(i-1)**3
+#         kup_farki_asal_sayilar_ciftleri_listesi.append(kup_farki_cifti)
+# else:
+#     print(kup_farki_asal_sayilar_ciftleri_listesi)
+
+
+
+
+# mukemmel_dongu_sayilari=[]
+# for i in range(1,1000):
+#     ters_i=""
+#     for j in str(i):
+#         ters_i=j+ters_i
+#     else:
+#         ters_toplam=i+int(ters_i)
+#         mukemmel_kontrol=0
+#         for k in range(1,ters_toplam):
+#             if ters_toplam%k==0:
+#                 mukemmel_kontrol+=k
+#         else:
+#             if mukemmel_kontrol==ters_toplam:
+#                 mukemmel_dongu_sayilari.append(i)
+# else:
+#     print(mukemmel_dongu_sayilari)
+
+
+
+
+# ardısık_cift_Tam_kareler=[]
+# for i in range(2,1000,2):
+#     if int((i**2+(i+2)**2)**0.5)==(i**2+(i+2)**2)**0.5:
+#         a=i,i+2
+#         ardısık_cift_Tam_kareler.append(a)
+# else:
+#     print(ardısık_cift_Tam_kareler)
+
+
+
+# harmonik_ortalama_listesi=[]
+# for i in range(1,1000):
+#     bolenler_toplami=0
+#     for j in range(1,i//2+1):
+#         if i%j==0:
+#             bolenler_toplami+=1/j
+#     else:
+#         bolenler_toplami+=1/i
+#         harmonik_ortalama=4/bolenler_toplami
+#         if harmonik_ortalama==int(harmonik_ortalama):
+#             harmonik_ortalama_listesi.append(i)
+# else:
+#     print(harmonik_ortalama_listesi)
+
+
+
+
+# asal_sayilar=[]
+# for i in range(2,50):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         asal_sayilar.append(i)
+# asal_carpan_kupu_esitligi_listesi=[]
+# for i in range(2,100):
+#     asal_carpanlar_kupu_toplami=0
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0 and j in asal_sayilar:
+#             asal_carpanlar_kupu_toplami+=j**3
+#     else:
+#         if asal_carpanlar_kupu_toplami==i:
+#             asal_carpan_kupu_esitligi_listesi.append(i)
+# else:
+#     print(asal_carpan_kupu_esitligi_listesi)
+#     print(asal_sayilar)
+
+
+
+
+# otomorfik_sayilari=[]
+# for i in range(1,10000):
+#     sayinin_karesi=[*str(i**2)]
+#     sayi_kendisi_kontrolu=""
+#     for j in range(1,len(str(i))+1):
+#         sayi_kendisi_kontrolu=sayinin_karesi[-j]+sayi_kendisi_kontrolu
+#     else:
+#         if int(sayi_kendisi_kontrolu)==i:
+#             otomorfik_sayilari.append(i)
+# else:
+#     print(otomorfik_sayilari)
+
+
+
+
+# mutlu_sayilar=[]
+# en_buyuk_tekrar_adedi=-1
+# for i in range(1,10000):
+#     a=i
+#     tekrar_adedi=0
+#     while True:
+#         rakamlar_kareleri_toplami=0
+#         for j in str(a):
+#             rakamlar_kareleri_toplami+=int(j)**2
+#         else:
+#             a=rakamlar_kareleri_toplami
+#             tekrar_adedi+=1
+#             if tekrar_adedi>15:
+#                 break
+#         if a==1 and en_buyuk_tekrar_adedi<tekrar_adedi:
+#             en_buyuk_tekrar_adedi=tekrar_adedi
+#             b=i,en_buyuk_tekrar_adedi
+#             mutlu_sayilar.append(b)
+#             break
+# else:
+#     print(b)
+
+
+
+
+# smith_sayilari=[]
+# for i in range(2,1000):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         continue
+#     a=i
+#     j=2
+#     rakamlar_toplami=0
+#     asal_carpanlar_rakamlari_toplami=0
+#     while a!=1:
+#         if a%j==0:
+#             for k in str(j):
+#                 asal_carpanlar_rakamlari_toplami+=int(k)
+#             else:
+#                 a//=j
+#         else:
+#             j+=1
+#     for l in str(i):
+#         rakamlar_toplami+=int(l)
+#     else:
+#         if asal_carpanlar_rakamlari_toplami==rakamlar_toplami:
+#             smith_sayilari.append(i)
+# else:
+#     print(smith_sayilari)
+
+
+
+# cift_asal_sayi_listesi=[]
+# asal_sayi_listesi=[]
+# for i in range(2,1000):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         asal_sayi_listesi.append(i)
+# else:
+#     for i in asal_sayi_listesi:
+#         if i-2 in asal_sayi_listesi:
+#             a=i-2,i
+#             cift_asal_sayi_listesi.append(a)
+#     else:
+#         print(cift_asal_sayi_listesi)
+
+
+
+# arkadas_sayilar=[]
+# for i in range(1,10000):
+#     ilk_bolen=0
+#     for j in range(1,i//2+1):
+#         if i%j==0:
+#             ilk_bolen+=j
+#     else:
+#         if ilk_bolen>i:
+#             ikinci_bolen=0
+#             for k in range(1,ilk_bolen//2+1):
+#                 if ilk_bolen%k==0:
+#                     ikinci_bolen+=k
+#             else:
+#                 if i==ikinci_bolen:
+#                     a=i,ilk_bolen
+#                     arkadas_sayilar.append(a)
+# else:
+#     print(arkadas_sayilar)
+
+
+
+
+# pisagor_ucluleri=[]
+# for a in range(1,100):
+#     for b in range(1,a):
+#         if (a**2+b**2)**0.5==int((a**2+b**2)**0.5):
+#             c=b,a
+#             pisagor_ucluleri.append(c)
+# else:
+#     print(pisagor_ucluleri)
+
+
+
+
+# fermat_sayilari=[]
+# for i in range(2,10):
+#     a=2**i-1
+#     for j in range(2,int(a**0.5)+1):
+#         if a%j==0:
+#             break
+#     else:
+#         fermat_sayilari.append(i)
+# else:
+#     print(fermat_sayilari)
+
+
+
+
+# pronic_sayilar=[]
+# for i in range(1,20):
+#     pronic_sayilar.append(i*(i+1))
+# else:
+#     print(pronic_sayilar)
+
+
+
+# karmasik_polindrom_Sayilari=[]
+# for i in range(1,1000):
+#     ters_i=""
+#     ters_rakamlar_toplami=""
+#     rakamlar_toplami=0
+#     for j in str(i):
+#         ters_i=j+ters_i
+#         rakamlar_toplami+=int(j)
+#     else:
+#         if ters_i==str(i):
+#             for k in str(rakamlar_toplami):
+#                 ters_rakamlar_toplami=k+ters_rakamlar_toplami
+#             else:
+#                 if ters_rakamlar_toplami==str(rakamlar_toplami) and rakamlar_toplami>10:
+#                     karmasik_polindrom_Sayilari.append(i)
+# else:
+#     print(karmasik_polindrom_Sayilari)
+
+
+
+# onlu_ikili_polindromlar_toplami=0
+# onlu_ikili_sayilar=[]
+# polindrom_sayilar=[]
+# for i in range(1,1000000):
+#     ters_i=""
+#     for j in str(i):
+#         ters_i=j+ters_i
+#     else:
+#         if int(ters_i)==i:
+#             polindrom_sayilar.append(i)
+# else:
+#     for i in polindrom_sayilar:
+#         a=i
+#         ikili_sayi=""
+#         while i!=1:
+#             ikili_sayi+=str(i%2)
+#             i//=2
+#         else:
+#             ikili_sayi+="1"
+#             ters_ikili_sayi=""
+#             for j in str(ikili_sayi):
+#                 ters_ikili_sayi=j+ters_ikili_sayi
+#             else:
+#                 if ters_ikili_sayi==ikili_sayi:
+#                     onlu_ikili_polindromlar_toplami+=a
+#                     onlu_ikili_polindromlar=a,int(ikili_sayi)
+#                     onlu_ikili_sayilar.append(onlu_ikili_polindromlar)
+# print(onlu_ikili_sayilar)
+# print(len(onlu_ikili_sayilar))
+# print(onlu_ikili_polindromlar_toplami)
+
+# i=int(input())
+# ikili_sayi=""
+# while i!=1:
+#     ikili_sayi+=str(i%2)
+#     i//=2
+# else:
+#     ikili_sayi+="1"
+#     ters_ikili_sayi=""
+#     print(ikili_sayi)
+#     for j in str(ikili_sayi):
+#         ters_ikili_sayi=j+ters_ikili_sayi
+#     else:
+#         if ters_ikili_sayi==ikili_sayi:
+#            print("dormammu")
+
+
+
+
+# faktoriyel=1
+# faktoriyel_Asallar=[]
+# for i in range(2,10):
+#     faktoriyel*=i
+#     a=0
+#     for j in range(2,faktoriyel-1):
+#         if (faktoriyel-1)%j==0:
+#             break
+#     else:
+#         a=1
+#     for j in range(2,faktoriyel+1):
+#         if (faktoriyel+1)%j==0:
+#             break
+#     else:
+#         a=1
+#     if a==1:
+#         faktoriyel_Asallar.append(i)
+# else:
+#     print(faktoriyel_Asallar)
+
+
+
+# ardısık_sayi_kupu_listesi=[]
+# for i in range(1,1000):
+#     ardısık_sayi_kupu=i**3+(i+1)**3+(i+2)**3
+#     for j in range(2,ardısık_sayi_kupu):
+#         if ardısık_sayi_kupu%j==0:
+#             break
+#     else:
+#         ardısık_sayilar=[i,i+1,i+2]
+#         ardısık_sayi_kupu_listesi.append(ardısık_sayilar)
+# else:
+#     print(ardısık_sayi_kupu_listesi)
+
+
+# rakam_karesi_asal_olan_sayilar=[]
+# for i in range(1,100):
+#     rakamlar_karesi_toplami=0
+#     for j in str(i):    
+#         rakamlar_karesi_toplami+=int(j)**2
+#     else:
+#         rakamlar_karesi_toplami_modu=rakamlar_karesi_toplami%i
+#         for k in range(2,rakamlar_karesi_toplami_modu):
+#             if rakamlar_karesi_toplami%k==0:
+#                 break
+#         else:
+#             rakam_karesi_asal_olan_sayilar.append(i)
+# else:
+#     print(rakam_karesi_asal_olan_sayilar)
+
+
+
+
+# faktoriyel_modlu_asallar=[]
+# faktoriyel=1
+# for i in range(1,100):
+#     faktoriyel*=i
+#     for j in range(2,faktoriyel-i):
+#         if (faktoriyel-i)%j==0:
+#             break
+#     else:
+#         faktoriyel_modlu_asallar.append(i)
+# else:
+#     print(faktoriyel_modlu_asallar)
+
+
+
+
+# son_iki_basamak_kup_asal_sayilar=[]
+# for i in range(3,100):
+#     sayinin_kupu=[*str(i**3)]
+#     son_iki_basamak=sayinin_kupu[-2]+sayinin_kupu[-1]
+#     if int(son_iki_basamak)!=0 and int(son_iki_basamak)!=1:
+#         for j in range(2,int(son_iki_basamak)):
+#             if int(son_iki_basamak)%j==0:
+#                 break
+#         else:
+#             son_iki_basamak_kup_asal_sayilar.append(i)
+#             print(i,son_iki_basamak)
+# else:
+#     print(son_iki_basamak_kup_asal_sayilar)
+
+
+
+
+# kare_kup_liste=[]
+# for i in range(1,1000): 
+#     for j in range(1,1000):
+#         if int((i**2+j**2)**(1/3))==(i**2+j**2)**(1/3):
+#             a=i,j,int((i**2+j**2)**1/3)
+#             kare_kup_liste.append(a)
+# else:
+#     print(kare_kup_liste)
+
+
+
+# listem=[]
+# for i in range(2,100,2):
+#     a=1
+#     b=1
+#     for j in range(1,i+1):
+#         a*=j
+#     else:
+#         for j in range(1,i+3):
+#             b*=j
+#         else:
+#             c=(a+b)%(i+2)
+#             if c == int(c):
+#                 d=i,i+2,c
+#                 listem.append(d)
+# else:
+#     print(listem)
+
+
+
+
+# mersenne_sayilari=[]
+# for i in range(2,50):
+#     for j in range(2,int((2**i-1)**0.5)+1):
+#         if (2**i-1)%j==0:
+#             break
+#     else:
+#         mersenne_sayilari.append(2**i-1)
+# else:
+#     print(mersenne_sayilari)
+
+# https://music.youtube.com/watch?v=E0PuVioACfQ&si=QPh8EqRZlAz_thGj
+
+
+
+
+# pdi_sayilari=[]
+# for i in range(1,100000):
+#     basamaklar_ussu_toplami=0
+#     for j in str(i):
+#         basamaklar_ussu_toplami+=int(j)**len(str(i))
+#     else:
+#         if basamaklar_ussu_toplami==i:
+#             pdi_sayilari.append(i)
+# else:
+#     print(pdi_sayilari)
+
+
+
+# leyland_sayilari=[]
+# for i in range(2,19):
+#     for j in range(2,i):
+#         leyland_kontrol=i**j+j**i
+#         for k in range(2,int(leyland_kontrol**0.5)+1):
+#             if leyland_kontrol%k==0:
+#                 break
+#         else:
+#             leyland_sayilari.append(leyland_kontrol)
+# else:
+#     print(leyland_sayilari)
+
+
+
+
+# otomorfik_sayilar=[]
+# for i in range(1,100000):
+#     kontrol=[*str(i**2)]
+#     son_basamaklar=""
+#     for j in range(1,len(str(i))+1):
+#         son_basamaklar=kontrol[-j]+son_basamaklar
+#     else:
+#         if int(son_basamaklar)==i:
+#             otomorfik_sayilar.append(i)
+# else:
+#     print(otomorfik_sayilar)
+
+
+
+
+# pandigital_asallar=[]
+# for i in range(1,100000):
+#     for j in str(i):
+#         if int(j)>len(str(i)):
+#             break
+#     else:
+#         kontrol_sayisi=[]
+#         for k in str(i):
+#             if k not in kontrol_sayisi:
+#                 kontrol_sayisi.append(k)
+#         else:
+#             if len(kontrol_sayisi)==len(str(i)):
+#                 for l in range(2,i):
+#                     if i%l==0:
+#                         break
+#                 else:
+#                     pandigital_asallar.append(i)
+# else:
+#     print(pandigital_asallar)
+
+
+
+
+# catalan_sayilari=[]
+# for n in range(1,10):
+#     payda=1
+#     pay=1
+#     for j in range(1,2*n+1):
+#         if j<n+1:
+#             payda*=j
+#         pay*=j
+#     else:
+#         payda*=(payda*(n+1))
+#         catalan_sayisi=pay/payda
+#         catalan_sayilari.append(int(catalan_sayisi))
+# else:
+#     print(catalan_sayilari)
+
+
+
+
+# ruth_aaron_ciftleri=[]
+# for i in range(2,2000):
+#     sayi2=i+1
+#     sayi1=i
+#     a=2
+#     asal_sayi_listesi1=[]
+#     asal_sayi_listesi1_toplami=0
+#     while sayi1!=1:
+#         if sayi1%a==0:
+#             for k in range(2,int(a**0.5)+1):
+#                 if a%k==0:
+#                     break
+#             else:
+#                 asal_sayi_listesi1.append(a)
+#                 asal_sayi_listesi1_toplami+=a
+#                 sayi1//=a
+#         else:
+#             a+=1
+#     else:
+#         for j in range(2,int(sayi2*0.5)+1):
+#             if sayi2%j==0:
+#                 a=2
+#                 asal_sayi_listesi2=[]
+#                 asal_sayi_listesi2_toplami=0
+#                 while sayi2!=1:
+#                     if sayi2%a==0:
+#                         for k in range(2,int(a**0.5)+1):
+#                             if a%k==0:
+#                                 break
+#                         else:
+#                             asal_sayi_listesi2.append(a)
+#                             asal_sayi_listesi2_toplami+=a
+#                             sayi2//=a
+#                     else:
+#                         a+=1
+#                 else:
+#                     if asal_sayi_listesi1_toplami==asal_sayi_listesi2_toplami:
+#                         a=i,i+1
+#                         ruth_aaron_ciftleri.append(a)
+# else:
+#     print(ruth_aaron_ciftleri)
+
+
+
+
+# palindromik_asal_sayilar=[]
+# for i in range(2,1000):
+#     ters_i=""
+#     for j in str(i):
+#         ters_i=j+ters_i
+#     else:
+#         if int(ters_i)==i:
+#             for k in range(2,int(i**0.5)+1):
+#                 if i%k==0:
+#                     break
+#             else:
+#                 palindromik_asal_sayilar.append(i)
+# else:
+#     print(palindromik_asal_sayilar)
+
+
+
+
+# sophia_germain_asallari=[]
+# for p in range(2,2000):
+#     for i in range(2,int(p**0.5)+1):
+#         if p%i==0:
+#             break
+#     else:
+#         for j in range(2,int((2*p+1)**0.5)+1):
+#             if (2*p+1)%j==0:
+#                 break
+#         else:
+#             sophia_germain_asallari.append(p)
+# else:
+#     print(sophia_germain_asallari)
+
+
+
+
+# asal_fermat_sayilari=[]
+# for n in range(1,15):
+#     fermat_sayisi=((2**2)**n)+1
+#     for j in range(2,int(fermat_sayisi**0.5)+1):
+#         if fermat_sayisi%j==0:
+#             break
+#     else:
+#         asal_fermat_sayilari.append(fermat_sayisi)
+# else:
+#     print(asal_fermat_sayilari)
+
+
+
+
+# mersenne_mukemmel_sayilari=[]
+# for p in range(1,25):
+#     mersenne_Sayisi=2**p-1
+#     for i in range(2,int(mersenne_Sayisi**0.5)+1):
+#         if mersenne_Sayisi%i==0:
+#             break
+#     else:
+#         mersenne_mukemmel_sayilari.append(mersenne_Sayisi)
+# print(mersenne_mukemmel_sayilari)
+
+
+
+
+# cift_sayilar=[]
+# asal_sayilar=[]
+# for i in range(2,100):
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         asal_sayilar.append(i)
+# else:
+#     for i in asal_sayilar:
+#         for j in asal_sayilar:
+#             cift_sayi=i+j
+#             if cift_sayi%2==0:
+#                 if cift_sayi not in cift_sayilar:
+#                     cift_sayilar.append(cift_sayi)
+#                     print(i,j,cift_sayi)
+
+
+
+# ramanujan_sayilari=[]
+# for i in range(1,16):
+#     for j in range(1,i):
+#         if i>j:
+#             ramanujan_sayisi=i**3+j**3
+#             ramanujan_sayilari.append(ramanujan_sayisi)
+# else:
+#     print(ramanujan_sayilari)
+
+
+
+
+# lynchel_Sayilari=[]
+# for i in range(1,1000):
+#     tekrar_adedi=0
+#     a=i
+#     while tekrar_adedi!=10:
+#         ters_i=""
+#         for j in str(i):
+#             ters_i=j+ters_i
+#         else:
+#             kontrol_toplami=int(ters_i)+i
+#             ters_kontrol_toplami=""
+#             for k in str(kontrol_toplami):
+#                 ters_kontrol_toplami=k+ters_kontrol_toplami
+#             else:
+#                 if int(ters_kontrol_toplami)==kontrol_toplami:
+#                     break
+#                 else:
+#                     tekrar_adedi+=1
+#                     i=kontrol_toplami
+#     if tekrar_adedi==10:
+#         lynchel_Sayilari.append(a)
+# else:
+#     print(lynchel_Sayilari)
+
+
+
+
+# harshad_niven_sayilari=[]
+# for i in range(1,1000):
+#     basamaklar_toplami=0
+#     for j in str(i):
+#         basamaklar_toplami+=int(j)
+#     else:
+#         if i%basamaklar_toplami==0:
+#             harshad_niven_sayilari.append(i)
+# else:
+#     print(harshad_niven_sayilari)
+
+
+
+
+# ikiz_asal_sayilar_listesi=[]
+# asal_sayilar_listesi=[]
+# for i in range(2,1000):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         asal_sayilar_listesi.append(i)
+# else:
+#     for i in asal_sayilar_listesi:
+#         for j in asal_sayilar_listesi:
+#             if i-2==j:
+#                 a=j,i
+#                 ikiz_asal_sayilar_listesi.append(a)
+#     else:
+#         print(ikiz_asal_sayilar_listesi)
+
+
+
+
+# asal_sayilar=[]
+# wieferich_asal_Sayilari=[]
+# for i in range(2,10000):
+#     for j in range(2,int(i**0.5)+1):
+#         if i%j==0:
+#             break
+#     else:
+#         asal_sayilar.append(i)
+# else:
+#     for i in asal_sayilar:
+#         if (2**(i-1))%(i**2)==1:
+#             wieferich_asal_Sayilari.append(i)
+#     else:
+#         print(wieferich_asal_Sayilari)
+
+
+
+
+# a=2
+# sylvester_sayilari=[]
+# for i in range(1,8):
+#     a=a*(a-1)+1
+#     for j in range(2,int(a**0.5)+1):
+#         if a%j==0:
+#             break
+#     else:
+#         sylvester_sayilari.append(a)
+# else:
+#     print(sylvester_sayilari)
+
+
+
+
